@@ -1,0 +1,24 @@
+@mixin flex-justify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  @include flex-justify();
+
+  width: 100%;
+
+  background-color: #00043c;
+  color: white;
+
+  ul {
+    @include flex-justify();
+
+    list-style: none;
+
+    .nav {
+      padding: 1em;
+    }
+  }
+}

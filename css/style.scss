@@ -1,0 +1,27 @@
+@import "./header";
+@import "./nav";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include flex-center();
+
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0 auto;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  @include flex-center();
+  flex-flow: column wrap;
+  width: 60%;
+  max-width: 1140px;
+
+  margin: 0 auto;
+}
