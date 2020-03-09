@@ -1,0 +1,17 @@
+@mixin paragraph-and-h1 {
+  h1 {
+    color: #fff;
+    font-size: 5em;
+  }
+
+  p {
+    color: $details-color;
+    font-weight: bold;
+  }
+
+  p,
+  h1 {
+    margin: 0 auto;
+    letter-spacing: 4px;
+  }
+}

@@ -1,0 +1,145 @@
+@import "./mixins/flex-center";
+
+$black: #00043c;
+$details-color: #fdbe34;
+
+.blocks {
+  @include flex-center();
+
+  margin: 40px 0 0 0;
+
+  .block {
+    padding: 15px;
+    text-align: center;
+
+    h1 {
+      color: $black;
+    }
+
+    p {
+      color: grey;
+    }
+
+    &__grey {
+      background-color: rgb(219, 219, 219);
+      color: grey;
+    }
+
+    &__yellow {
+      background-color: $details-color;
+      p {
+        color: $black;
+      }
+    }
+
+    &__black {
+      background-color: $black;
+
+      h1 {
+        color: white;
+      }
+
+      p {
+        color: rgb(219, 219, 219);
+      }
+    }
+  }
+}
+
+.about {
+  @include flex-center;
+  height: 614px;
+  position: relative;
+
+  .img {
+    width: 50%;
+    overflow: hidden;
+
+    background-image: url("/img/about.jpg");
+    background-size: cover;
+  }
+
+  &__text {
+    width: 50%;
+    padding-left: 40px;
+
+    h1 {
+      color: $black;
+      font-size: 2em;
+    }
+
+    p {
+      color: grey;
+    }
+
+    .title__yellow {
+      color: $details-color;
+      font-weight: bold;
+    }
+
+    .title__yellow,
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &__buttons {
+    @include flex-center;
+    margin-top: 2em;
+  }
+
+  &__button {
+    width: 33.3%;
+    padding: 0.8em 0;
+    margin-right: 0.4em;
+
+    background-color: #fff;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.4em;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+
+    transition: ease-in-out 0.2s;
+
+    &:last-child {
+      margin: 0;
+    }
+    &--active {
+      background-color: $details-color;
+      color: white;
+    }
+
+    &__play {
+      @include flex-center;
+
+      height: 80px;
+      width: 80px;
+
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+
+      background-color: $details-color;
+      border-radius: 50%;
+      font-size: 1.5em;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__caption {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.4em;
+
+    margin-top: 0.8em;
+
+    padding: 0.2em 1.5em;
+    line-height: 1.8em;
+  }
+}

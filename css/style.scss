@@ -1,14 +1,13 @@
 @import "./header";
 @import "./nav";
+@import "./slider";
+@import "./main";
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "./mixins/flex-center";
 
 body {
   @include flex-center();
+  flex-flow: column wrap;
 
   box-sizing: border-box;
   background-color: #fff;
@@ -17,8 +16,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
+.container {
   @include flex-center();
+
   flex-flow: column wrap;
   width: 60%;
   max-width: 1140px;

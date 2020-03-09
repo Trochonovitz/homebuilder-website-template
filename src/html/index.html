@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header>
         <h1 class="logo">Home<span>builder.</span></h1>
         <div class="socials">
@@ -23,10 +23,12 @@
           <a href="#"><span class="icon icon-gplus"></span></a>
         </div>
       </header>
+    </div>
 
+    <div class="container">
       <nav>
         <ul>
-          <li class="nav">Home</li>
+          <li class="nav nav__home">Home</li>
           <li class="nav">About</li>
           <li class="nav">Our team</li>
           <li class="nav">Project</li>
@@ -34,12 +36,120 @@
           <li class="nav">Contact</li>
         </ul>
 
-        <div class="search-input">
-          <input type="search" name="" id="" placeholder="Search" />
-
-          <span class="icon-search"></span>
+        <div class="search-input" name="search">
+          <input type="search" name="search" id="" placeholder="Search" />
+          <button name="search" type="submit">
+            <span class="icon-search"></span>
+          </button>
         </div>
       </nav>
     </div>
+
+    <div class="slider">
+      <div class="text">
+        <p></p>
+        <h1></h1>
+      </div>
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="blocks">
+        <div class="block">
+          <h1>Construction</h1>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts
+            it is an almost unorthographic.
+          </p>
+        </div>
+        <div class="block">
+          <h1>House Renovation</h1>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts
+            it is an almost unorthographic.
+          </p>
+        </div>
+        <div class="block">
+          <h1>Painting</h1>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts
+            it is an almost unorthographic.
+          </p>
+        </div>
+        <div class="block">
+          <h1>Architecture Design</h1>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts
+            it is an almost unorthographic.
+          </p>
+        </div>
+      </div>
+
+      <div class="blocks">
+        <div class="block block__grey">
+          <h1>Expert & Professional</h1>
+          <p>Separated they live in. A small river named Duden flows</p>
+        </div>
+        <div class="block block__yellow">
+          <h1>High Quality Work</h1>
+          <p>Separated they live in. A small river named Duden flows</p>
+        </div>
+        <div class="block block__black">
+          <h1>
+            24/7 Help Support
+          </h1>
+          <p>Separated they live in. A small river named Duden flows</p>
+        </div>
+      </div>
+
+      <div class="about">
+        <a href="http://vimeo.com/45830194"
+          ><div class="about__button__play">►</div></a
+        >
+
+        <div class="img">
+          <img src="/img/about.jpg" alt="about-image" set="" />
+        </div>
+
+        <div class="about__text">
+          <span class="title__yellow">Welcome to Home Builder</span>
+
+          <h1>We create and turn into reality</h1>
+
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia
+          </p>
+
+          <div class="about__buttons">
+            <button class="about__button about__button--active">
+              Our Mission
+            </button>
+            <button class="about__button">Our Vision</button>
+            <button class="about__button">Our Value</button>
+          </div>
+
+          <div class="about__caption">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              mollis, urna nec aliquet vestibulum, neque odio mattis est, sed
+              tempor sapien urna volutpat metus. Nam turpis elit, pharetra ut
+              felis eu, suscipit fringilla lacus. Mauris massa odio, sagittis in
+              venenatis vitae, venenatis ac neque. Sed auctor felis a nibh
+              sagittis ultricies. Maecenas eget augue rutrum, congue magna sit
+              amet, porttitor lorem
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/js/slider.js"></script>
+    <script src="/src/js/buttons.js"></script>
   </body>
 </html>

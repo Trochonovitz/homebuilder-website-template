@@ -1,24 +1,60 @@
-@mixin flex-justify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+@import "./mixins/flex-justify";
+
+$black: #00043c;
+$details-color: #fdbe34;
 
 nav {
   @include flex-justify();
 
   width: 100%;
-
-  background-color: #00043c;
+  background-color: $black;
   color: white;
 
   ul {
     @include flex-justify();
 
+    margin: 0;
+    padding: 0;
     list-style: none;
 
     .nav {
-      padding: 1em;
+      padding: 2.1em 2.1em;
+      cursor: pointer;
+      font-size: 0.9em;
+
+      transition: ease-in-out 0.3s;
+
+      &__home {
+        background-color: $details-color;
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $details-color;
+        color: $black;
+      }
+    }
+  }
+
+  .search-input {
+    margin-right: 1em;
+
+    input {
+      height: 3em;
+      width: 300px;
+      padding: 0.6em;
+
+      border: none;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #fff;
+      color: $black;
+
+      height: 3em;
+      border: none;
+      border-radius: 4px;
     }
   }
 }
