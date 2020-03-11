@@ -2,6 +2,8 @@
 @import "./nav";
 @import "./slider";
 @import "./main";
+@import "./testimonial";
+@import "./blog";
 
 @import "./mixins/flex-center";
 
@@ -17,11 +19,9 @@ body {
 }
 
 .container {
-  @include flex-center();
+  @include flex-center;
 
   flex-flow: column wrap;
   width: 60%;
   max-width: 1140px;
-
-  margin: 0 auto;
 }

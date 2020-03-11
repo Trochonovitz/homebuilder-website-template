@@ -1,16 +1,13 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "./mixins/flex-center";
+@import "./mixins/flex-justify";
 
 $black: #00043c;
 $details-color: #fdbe34;
 
 .slider {
-  @include flex-center();
-
-  position: relative;
+  @include flex-justify;
+  justify-content: space-evenly;
+  flex-direction: column;
 
   width: 100%;
   max-width: 1895px;
@@ -21,8 +18,9 @@ $details-color: #fdbe34;
   background-position: center;
 
   .text {
-    @include flex-center();
-    flex-flow: column wrap;
+    @include flex-center;
+    flex-flow: column;
+    padding-top: 15em;
 
     h1 {
       color: #fff;
@@ -41,11 +39,9 @@ $details-color: #fdbe34;
     }
   }
   .dots {
-    @include flex-center();
-    align-self: flex-end;
+    @include flex-center;
 
-    position: absolute;
-    margin-bottom: 2em;
+    padding: 10em 0 2em 0;
 
     .dot {
       height: 10px;

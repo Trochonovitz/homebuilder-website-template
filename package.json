@@ -1,0 +1,23 @@
+{
+  "name": "homebuilder-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trochonovitz/homebuilder-website-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trochonovitz/homebuilder-website-template/issues"
+  },
+  "homepage": "https://github.com/Trochonovitz/homebuilder-website-template#readme",
+  "dependencies": {
+    "countup.js": "^2.0.4",
+    "swiper": "^5.3.6"
+  }
+}
