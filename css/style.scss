@@ -4,11 +4,13 @@
 @import "./main";
 @import "./testimonial";
 @import "./blog";
+@import "./newsletter";
+@import "./footer";
 
 @import "./mixins/flex-center";
 
 body {
-  @include flex-center();
+  @include flex-center;
   flex-flow: column wrap;
 
   box-sizing: border-box;
