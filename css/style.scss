@@ -7,11 +7,11 @@
 @import "./newsletter";
 @import "./footer";
 
-@import "./mixins/flex-center";
-
 body {
-  @include flex-center;
-  flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   box-sizing: border-box;
   background-color: #fff;

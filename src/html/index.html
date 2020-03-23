@@ -6,13 +6,16 @@
     <title>Homebuilder Website Template</title>
 
     <link rel="stylesheet" href="/css/style.css" />
+
     <link rel="stylesheet" href="/fontello-db113f65/css/fontello.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/node_modules/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="/node_modules/swiper/css/swiper.css" />
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -24,9 +27,7 @@
           <a href="#"><span class="icon icon-gplus"></span></a>
         </div>
       </header>
-    </div>
 
-    <div class="container">
       <nav>
         <ul>
           <li class="nav nav__home">Home</li>
@@ -46,16 +47,16 @@
       </nav>
     </div>
 
-    <div class="slider">
-      <div class="text">
-        <p></p>
-        <h1></h1>
-      </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
 
-      <div class="dots">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
 
@@ -301,12 +302,113 @@
     </section>
 
     <footer>
-      footer
+      <div class="about-us">
+        <h3>About us</h3>
+        <ul>
+          <li>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </li>
+        </ul>
+
+        <div class="icons">
+          <span class="icon-twitter"></span>
+          <span class="icon-facebook"></span>
+          <span class="icon-instagram"></span>
+        </div>
+      </div>
+
+      <div class="services">
+        <h3>Services</h3>
+
+        <ul>
+          <li>Construction</li>
+          <li>House Renovation</li>
+          <li>Painting</li>
+          <li>Arhictecture Design</li>
+        </ul>
+      </div>
+
+      <div class="about-footer">
+        <h3>About</h3>
+
+        <ul>
+          <li>Staff</li>
+          <li>Team</li>
+          <li>Careers</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <div class="resources">
+        <h3>Resources</h3>
+
+        <ul>
+          <li>Security</li>
+          <li>Global</li>
+          <li>Charts</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+
+      <div class="quote-form">
+        <form action="#" method="POST">
+          <h3>Request A Quote</h3>
+          <p>
+            <label for="request">
+              <input
+                type="text"
+                name=""
+                id="request"
+                placeholder="Your name"
+                required
+              />
+              <input
+                type="email"
+                name=""
+                id="request"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name=""
+                id="request"
+                placeholder="Subject"
+                required
+              />
+              <input
+                type="text"
+                name=""
+                id="request"
+                placeholder="Message"
+                required
+              />
+            </label>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </footer>
 
-    <script src="/node_modules/swiper/js/"></script>
-    <script src="/src/js/counting.js"></script>
-    <script src="/src/js/slider.js"></script>
+    <script src="/node_modules/swiper/js/swiper.min.js"></script>
+    <script>
+      const mySwiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar"
+        }
+      });
+    </script>
+
+    <!-- <script src="/src/js/slider.js"></script> -->
+    <!-- <script src="/src/js/counting.js"></script> -->
     <script src="/src/js/buttons.js"></script>
   </body>
 </html>

@@ -16,8 +16,7 @@
     "url": "https://github.com/Trochonovitz/homebuilder-website-template/issues"
   },
   "homepage": "https://github.com/Trochonovitz/homebuilder-website-template#readme",
-  "dependencies": {
-    "countup.js": "^2.0.4",
+  "devDependencies": {
     "swiper": "^5.3.6"
   }
 }
