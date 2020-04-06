@@ -27,14 +27,22 @@
       </header>
 
       <nav>
-        <ul>
-          <li class="nav nav__home">Home</li>
-          <li class="nav">About</li>
-          <li class="nav">Our team</li>
-          <li class="nav">Project</li>
-          <li class="nav">Blog</li>
-          <li class="nav">Contact</li>
-        </ul>
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+
+        <div class="navigation">
+          <ul>
+            <li class="nav nav__home">Home</li>
+            <li class="nav">About</li>
+            <li class="nav">Our team</li>
+            <li class="nav">Project</li>
+            <li class="nav">Blog</li>
+            <li class="nav">Contact</li>
+          </ul>
+        </div>
 
         <div class="search-input" name="search">
           <input type="search" name="search" id="" placeholder="Search" />
@@ -45,43 +53,44 @@
       </nav>
     </div>
 
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
+    <div class="swiper">
+      <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
 
-        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
     <section class="container">
       <div class="blocks">
-        <div class="block">
+        <div class="block block--row">
           <h1>Construction</h1>
           <p>
             Even the all-powerful Pointing has no control about the blind texts
             it is an almost unorthographic.
           </p>
         </div>
-        <div class="block">
+        <div class="block block--row">
           <h1>House Renovation</h1>
           <p>
             Even the all-powerful Pointing has no control about the blind texts
             it is an almost unorthographic.
           </p>
         </div>
-        <div class="block">
+        <div class="block block--row">
           <h1>Painting</h1>
           <p>
             Even the all-powerful Pointing has no control about the blind texts
             it is an almost unorthographic.
           </p>
         </div>
-        <div class="block">
+        <div class="block block--row">
           <h1>Architecture Design</h1>
           <p>
             Even the all-powerful Pointing has no control about the blind texts
@@ -108,9 +117,9 @@
       </div>
 
       <div class="about">
-        <a href="http://vimeo.com/45830194"
-          ><div class="about__button__play">►</div></a
-        >
+        <a href="http://vimeo.com/45830194">
+          <div class="about__button__play">►</div>
+        </a>
 
         <div class="img"></div>
 
@@ -173,62 +182,100 @@
           <h1>Happy Clients</h1>
         </div>
 
-        <div class="testimonial__elements">
-          <div class="testimonial__block">
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind testx.
-            </p>
+        <div class="swiper-container swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
 
-            <div class="testimonial__block__info">
-              <div class="testimonial__block__img"></div>
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
+              </div>
+            </div>
 
-              <div class="testimonial__block__data">
-                <p class="name">Roger Scott</p>
-                <p>Marketing manager</p>
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonial__block">
+              <p class="testimonial__block__caption">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+
+              <div class="testimonial__block__info">
+                <div class="testimonial__block__img"></div>
+                <div class="testimonial__block__data">
+                  <p class="name">Roger Scott</p>
+                  <p>Marketing manager</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="testimonial__block">
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind testx.
-            </p>
-
-            <div class="testimonial__block__info">
-              <div class="testimonial__block__img"></div>
-
-              <div class="testimonial__block__data">
-                <p class="name">Roger Scott</p>
-                <p>Marketing manager</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial__block">
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind testx.
-            </p>
-
-            <div class="testimonial__block__info">
-              <div class="testimonial__block__img"></div>
-
-              <div class="testimonial__block__data">
-                <p class="name">Roger Scott</p>
-                <p>Marketing manager</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
 
@@ -249,7 +296,7 @@
             <div class="blog__element__title">
               <h3>
                 Even the all-powerful Pointing has no control about the blind
-                texts
+                texts.
               </h3>
             </div>
           </div>
@@ -390,22 +437,8 @@
     </footer>
 
     <script src="/node_modules/swiper/js/swiper.min.js"></script>
-    <script>
-      const mySwiper = new Swiper(".swiper-container", {
-        pagination: {
-          el: ".swiper-pagination"
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        scrollbar: {
-          el: ".swiper-scrollbar"
-        }
-      });
-    </script>
-
-    <!-- <script src="/src/js/slider.js"></script> -->
+    <script src="/src/js/slider.js"></script>
+    <script src="/src/js/hamburger.js"></script>
     <!-- <script src="/src/js/counting.js"></script> -->
     <script src="/src/js/buttons.js"></script>
   </body>

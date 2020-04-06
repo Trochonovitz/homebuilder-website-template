@@ -10,4 +10,36 @@ $details-color: #fdbe34;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  background-position: center;
+  background-blend-mode: darken;
+
+  &__text,
+  &__title {
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    line-height: 0;
+  }
+
+  &__text {
+    color: $details-color;
+  }
+
+  &__title {
+    color: white;
+    font-size: 5em;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(177, 177, 177);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0.2em;
+  margin: 0.2em;
 }

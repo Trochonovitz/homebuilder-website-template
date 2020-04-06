@@ -1,12 +1,18 @@
-const slider = document.querySelector(".swiper-container");
+// const mainSlider = document.querySelector(".swiper1");
+// const myMainSwiper = new Swiper(mainSlider, {
+//   pagination: {
+//     el: ".swiper-pagination"
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev"
+//   },
+//   autoplay: {
+//     delay: 3000
+//   }
+// });
 
-const sliderTitle = document.querySelector(".text h1");
-const sliderParagraph = document.querySelector(".text p");
-const dots = [...document.querySelectorAll(".dot")];
-
-let index = 0;
-let time = 4000;
-
+const slides = [...document.querySelectorAll(".swiper .swiper-slide")];
 const sliderProps = {
   img: ["/img/bg_0.jpg", "/img/bg_1.jpg", "/img/bg_2.jpg"],
   text: [
@@ -17,23 +23,31 @@ const sliderProps = {
   title: ["HOME BUILDER", "WE BUILD HOME", "PROFESSIONAL BUILDER"]
 };
 
-const changeSlide = index => {
-  slider.style.backgroundImage = `url(${sliderProps.img[index]})`;
-  sliderTitle.textContent = sliderProps.title[index];
-  sliderParagraph.textContent = sliderProps.text[index];
+const newSlide = () => {
+  slides.forEach((slide, i) => {
+    const text = document.createElement("p");
+    const title = document.createElement("h1");
+
+    text.classList.add("swiper-slide__text");
+    title.classList.add("swiper-slide__title");
+
+    text.textContent = sliderProps.text[i];
+    title.textContent = sliderProps.title[i];
+
+    slide.appendChild(text);
+    slide.appendChild(title);
+
+    slide.style.backgroundImage = `url(${sliderProps.img[i]})`;
+  });
 };
 
-const addActiveDot = index => {
-  dots.forEach(dot => dot.classList.remove("dot--active"));
+newSlide();
 
-  for (let i = 0; i < dots.length; i++) {
-    dots[index].classList.add("dot--active");
-  }
-};
-
-// setInterval(() => {
-//   index >= 2 ? (index = 0) : index++;
-
-//   changeSlide(index);
-//   addActiveDot(index);
-// }, time);
+const secondSlider = document.querySelector(".swiper2");
+const mySecondSwiper = new Swiper(secondSlider, {
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  slidesPerView: 3,
+  spaceBetween: 10
+});

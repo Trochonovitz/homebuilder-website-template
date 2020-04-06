@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Trochonovitz/homebuilder-website-template#readme",
   "devDependencies": {
+    "include-media": "^1.4.9",
     "swiper": "^5.3.6"
   }
 }
